@@ -81,9 +81,9 @@ Based on the specific allergen, customers will be able to find alternative ingre
  - For Users that want to list all the 8 Major Food Allergens and and their allergen_id ![Allergen_ID](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query6.png)
  - For Users who have, for example, egg allergy. The query below is to get the allergy_id of the ingredient (Food Allergen) ![Sample Query 1](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query1.png)
  - Users who wants to use the allergen_id to see all the products with that ingredient (Food Allergen). The sample query below uses egg (a001) ![Sample Query 2](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query2.png)
- - For Users who wants the ingredient to provide the information regarding all the substitute of ingredient(Food Allergen) for ex- here we look for egg (a001) ![Sample Query 3](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query3.png)
+ - For Users who wants the ingredient to provide the information regarding all the substitute of ingredient(Food Allergen), here we look for egg ![Sample Query 3](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query3.png)
  - Users will use the ingredient to provide the information regarding all the symptoms related to ingredient(Food Allergen) for ex- here we look for Egg(a001)![Sample Query 4](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query4.png)
- - If a person is having a particular symptom for example "Confusion" this query will return all the ingredients(food allergens) which can be associated  with the symptom.
+ - If a person is having a particular symptom for example "Confusion" this query will return all the ingredients(food allergens) which can be associated with the symptom. ![Sample Query 5](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query5.png)
 
 ## Use of Final Database to answer Hypothetical Questions:
  - Customers will know what Goya food products to avoid relating to their specific food allergy. 
