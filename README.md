@@ -21,7 +21,6 @@ This project is aimed at creating a database for customers with food allergies. 
  - Peanuts
  - Wheat 
  - Soybean
-
 Based on the specific allergen, customers will be able to find alternative ingredients to use and the symptoms associated with each allergen.
 
 ## List of data sources:
@@ -39,7 +38,6 @@ Based on the specific allergen, customers will be able to find alternative ingre
 
 ### Symptoms:
  - https://acaai.org/allergies/types/food-allergy
-
 
 ## Technologies:
  - Beautiful Soup
@@ -59,23 +57,16 @@ Based on the specific allergen, customers will be able to find alternative ingre
 ### Transform
  - We shared the tasks of extracting each allergen products and their substitute amongst the team. So we ended up having 8 CSVs each for products and their substitutes.
  - We concated the 8 CSVs into 1 and then proceeded to merge it with the master allergens table, joining on the allergy_id column. We did this for the products, symptoms and the substitutes tables.
- - We reformatted the and cleaned the table. Dropped unnecessary columns and exported them to CSVs.
+ - We reformatted the and cleaned the table, dropping unnecessary columns and duplicates.
 
 ### Load Process
 - The resulting, cleaned DataFrames were imported into a PostgreSQL datadase that we created using pgAdmin.
 
-#### Allergens Table
-![Allergens Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/allergens_table.png)
+#### Allergens Table (Left) and Products Table (Right)
+![Allergens Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/allergens_table.png) ![Products Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/products_table.png) 
 
-#### Products Table
-![Products Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/products_table.png) 
-
-#### Ingredients Substitutes Table
-![Substitutes Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/substitutes_table.png) 
-
-#### Allergen Symptoms Table
-![Symptoms Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/symptoms_table.png) 
-
+#### Ingredients Substitutes Table (Left) and Allergen Symptoms Table (Right)
+![Substitutes Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/substitutes_table.png) ![Symptoms Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/symptoms_table.png)
 
 ## Example Queries:
  - For Users that want to list all the 8 Major Food Allergens and and their allergen_id ![Allergen_ID](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query6.png)
