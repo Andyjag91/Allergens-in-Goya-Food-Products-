@@ -21,6 +21,7 @@ This project is aimed at creating a database for customers with food allergies. 
  - Peanuts
  - Wheat 
  - Soybean
+
 Based on the specific allergen, customers will be able to find alternative ingredients to use and the symptoms associated with each allergen.
 
 ## List of data sources:
