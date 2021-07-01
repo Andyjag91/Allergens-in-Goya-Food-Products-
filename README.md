@@ -37,26 +37,29 @@ Based on the specific allergen, customers will be able to find alternative ingre
  - https://www.livekindly.co/9-vegan-proteins-to-eat-when-youre-allergic-to-soy/ 
  - https://www.eatingwithfoodallergies.com/wheat-substitutes/
 
-Symptoms:
-https://acaai.org/allergies/types/food-allergy
+### Symptoms:
+ - https://acaai.org/allergies/types/food-allergy
 
 
-#H3 Technologies:
-Beautiful Soup
-PostgreSQL
-Python
-Pandas
-Quick DBD
+## Technologies:
+ - Beautiful Soup
+ - PostgreSQL
+ - Python
+ - Pandas
+ - Quick DBD
 
-#H3 Extraction, Transform, Load Process
-[ERD image]
+## Extraction, Transform, Load Process
+![ERD](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/QuickDBD-export%20(1).png)
 
+### Extraction
+ - BeautifulSoup was used to scrape and extract the data from the Goya resourse website (Open Food Data). We extracted all 1154 ingredients and their products from the website. We then proceeded to filter all the ingredients down to the 8 aforementioned allergens. The raw data we extracted was in the form of nested lists, so a function was created to flatten the list, so that each product as well as their corresponding products were displayed in individual rows.
+ - A similar process of extraction was utilized on the each URL we used for the food substitutes.
+ - For the symptoms table, after the extraction, a dictionary comprehension was utilized to match each allergen to the their list of symptoms.
 
-BeautifulSoup was used to scrape and extract the data from the Goya website. We extracted all 1154 ingredients and their products from the Goya website. We then proceeded to filter all the ingredients down to the 8 aforementioned allergens.
-
-We repeated the same process for the substitutes and the symptoms.
-
-Transforming by cleaning or reformatting it. Joining Dataframes based on the ingredient’s similarities. Dataframes were merged on the jupyter notebook.
+### Transform
+ - We shared the tasks of extracting each allergen products and their substitute amongst the team. So we ended up having 8 CSVs each for products and their substitutes.
+ - We concated the 8 CSVs into 1 and then proceeded to merge it with the master allergens table, joining on the allergy_id column. We did this for both the products and the ingredients tables.
+ - We reformatted the and cleaned the table. Dropped unnecessary columns and exported them to CSVs.
 
 The extracted files were loaded into 8 separate CSVs corresponding to each allergen. Dataframes were created using pandas. The resulting, cleaned DataFrames were imported as tables into SQL.
 [allergens_id table image]
