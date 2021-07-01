@@ -61,10 +61,14 @@ Based on the specific allergen, customers will be able to find alternative ingre
  - We concated the 8 CSVs into 1 and then proceeded to merge it with the master allergens table, joining on the allergy_id column. We did this for both the products and the ingredients tables.
  - We reformatted the and cleaned the table. Dropped unnecessary columns and exported them to CSVs.
 
-The extracted files were loaded into 8 separate CSVs corresponding to each allergen. Dataframes were created using pandas. The resulting, cleaned DataFrames were imported as tables into SQL.
-[allergens_id table image]
+### Load Process
+- The resulting, cleaned DataFrames were imported into a PostgreSQL datadase that we created using pgAdmin.
 
-[joined products table image] 
+#### Allergens Master Table
+![Allergens Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/allergens_table.png)
+
+#### Joined Products Table
+![Products Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/products_table.png) 
 
 [joined subs table image]
 
