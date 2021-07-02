@@ -81,12 +81,7 @@ Based on the specific allergen, customers will be able to find alternative ingre
  - What ingredients are available to subsitute for a specific food allergen?
  - How does one know the symptoms of a specific food allergen?
  
-## Limitations
- - Should data be visualized through one large database, or a database with multiple schemas?
- - One database with all food products with allergens
- - One database with each product by allergen (8)
- - (milk, eggs, fish, shellfish, tree nuts, peanuts, wheats, soybeans)
- - The Difference between the two options would be the syntax of the coding of query to either go through one database or multiple schemas  
+
  
 ## Contacts:
  - Abayomi Olujobi
