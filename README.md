@@ -3,11 +3,11 @@
 ## Table of contents
 - [Project Summary](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#project-summary)
 - [Technologies](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#technologies)
-- [Extraction, Transformation, and Load Process](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#Extraction, Transformation, and Load Process)
+- [Extraction, Transformation, Load Process](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#extraction-transform-load-process)
 - [Example Queries](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#example-queries)
-- [Questions](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#questions)
+- [Hypothetical Questions](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#hypothetical-questions)
 - [Limitations](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#limitations)
-- [Contact](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#contact)
+- [Contacts](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#contacts)
 
 ## Project Summary
 
@@ -76,19 +76,19 @@ Based on the specific allergen, customers will be able to find alternative ingre
  - Users will use the ingredient to provide the information regarding all the symptoms related to ingredient(Food Allergen) for ex- here we look for Egg(a001)![Sample Query 4](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query4.png)
  - If a person is having a particular symptom for example "Confusion" this query will return all the ingredients(food allergens) which can be associated with the symptom. ![Sample Query 5](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query5.png)
 
-## Use of Final Database to answer Hypothetical Questions:
+## Hypothetical Questions:
  - Customers will know what Goya food products to avoid relating to their specific food allergy. 
  - Customers will be able to find substitute ingredients to avoid their specific allergy
  - Customers will be able to understand the symptoms that comes along with each allergy
  
-## Things to consider for project/concerns/limitations
+## Limitations
  - Should data be visualized through one large database, or a database with multiple schemas?
  - One database with all food products with allergens
  - One database with each product by allergen (8)
  - (milk, eggs, fish, shellfish, tree nuts, peanuts, wheats, soybeans)
  - The Difference between the two options would be the syntax of the coding of query to either go through one database or multiple schemas  
  
-## Contacts/Teams Members:
+## Contacts:
  - Abayomi Olujobi
  - Andy Jagdeo
  - Saumya Pandey 
