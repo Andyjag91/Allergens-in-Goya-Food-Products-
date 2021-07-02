@@ -77,9 +77,9 @@ Based on the specific allergen, customers will be able to find alternative ingre
  - If a person is having a particular symptom for example "Confusion" this query will return all the ingredients(food allergens) which can be associated with the symptom. ![Sample Query 5](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query5.png)
 
 ## Hypothetical Questions:
- - Customers will know what Goya food products to avoid relating to their specific food allergy. 
- - Customers will be able to find substitute ingredients to avoid their specific allergy
- - Customers will be able to understand the symptoms that comes along with each allergy
+ - What Goya food products should one avoid if allergic to a specific food allergen?
+ - What ingredients are available to subsitute for a specific food allergen?
+ - How does one know the symptoms of a specific food allergen?
  
 ## Limitations
  - Should data be visualized through one large database, or a database with multiple schemas?
