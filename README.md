@@ -1,14 +1,13 @@
 # Food Allergies Database
 
 ## Table of contents
-- Project Summary
-- Technologies
-- Data Extraction, Transformation, extraction load process
-- Example Queries
-- Features
-- Status
-- Inspiration
-- Contact
+- [Project Summary](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#project-summary)
+- [Technologies](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#technologies)
+- [Extraction, Transformation, and Load Process](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#Extraction, Transformation, and Load Process)
+- [Example Queries](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#example-queries)
+- [Questions](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#questions)
+- [Limitations](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#limitations)
+- [Contact](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/README.md#contact)
 
 ## Project Summary
 
