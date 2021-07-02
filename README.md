@@ -50,16 +50,16 @@ Based on the specific allergen, customers will be able to find alternative ingre
 
 ### Extraction
  - BeautifulSoup was used to scrape and extract the data from the Goya resourse website (Open Food Data). We extracted all 1154 ingredients and their products from the website. We then proceeded to filter all the ingredients down to the 8 aforementioned allergens. The raw data we extracted was in the form of nested lists, so a function was created to flatten the list, so that each product as well as their corresponding products were displayed in individual rows.
- - A similar process of extraction was utilized on the each URL we used for the food substitutes.
+ - A similar process of extraction was utilized on each of the URL we used for the food substitutes.
  - For the symptoms table, after the extraction, a dictionary comprehension and stack fucntion in Pandas was utilized to match each allergen to the their list of symptoms.
 
 ### Transform
- - We shared the tasks of extracting each allergen products and their substitute amongst the team. So we ended up having 8 CSVs each for products and their substitutes.
+ - We shared the tasks of extracting each allergen products and their substitute amongst each other. So we ended up having 8 CSVs, each for products and their substitutes.
  - We concated the 8 CSVs into 1 and then proceeded to merge it with the master allergens table, joining on the allergy_id column. We did this for the products, symptoms and the substitutes tables.
- - We reformatted the and cleaned the table, dropping unnecessary columns and duplicates.
+ - We then reformatted the and cleaned the table, dropping unnecessary columns and duplicates.
 
 ### Load Process
-- The resulting, cleaned DataFrames were imported into a PostgreSQL datadase that we created using pgAdmin.
+- The resulting cleaned DataFrames were then imported into a PostgreSQL datadase that we created using pgAdmin.
 
 #### Allergens Table (Left) and Products Table (Right)
 ![Allergens Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/allergens_table.png) ![Products Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/products_table.png) 
@@ -79,8 +79,6 @@ Based on the specific allergen, customers will be able to find alternative ingre
  - What Goya food products should one avoid if allergic to a specific food allergen?
  - What ingredients are available to subsitute for a specific food allergen?
  - How does one know the symptoms of a specific food allergen?
- 
-
  
 ## Contacts:
  - [Abayomi Olujobi](https://github.com/bay0624)
