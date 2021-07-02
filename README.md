@@ -83,6 +83,6 @@ Based on the specific allergen, customers will be able to find alternative ingre
 
  
 ## Contacts:
- - Abayomi Olujobi
- - Andy Jagdeo
- - Saumya Pandey 
+ - [Abayomi Olujobi](https://github.com/bay0624)
+ - [Andy Jagdeo](https://github.com/Andyjag91)
+ - [Saumya Pandey](https://github.com/saumya-datascience)
