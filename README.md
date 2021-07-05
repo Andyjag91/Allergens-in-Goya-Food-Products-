@@ -68,12 +68,47 @@ Based on the specific allergen, customers will be able to find alternative ingre
 ![Substitutes Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/substitutes_table.png) ![Symptoms Table](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/symptoms_table.png)
 
 ## Example Queries:
- - For Users that want to list all the 8 Major Food Allergens and and their allergen_id ![Allergen_ID](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query6.png)
- - For Users who have, for example, egg allergy. The query below is to get the allergy_id of the ingredient (Food Allergen) ![Sample Query 1](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query1.png)
- - Users who wants to use the allergen_id to see all the products with that ingredient (Food Allergen). The sample query below uses egg (a001) ![Sample Query 2](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query2.png)
- - For Users who wants the ingredient to provide the information regarding all the substitute of ingredient(Food Allergen), here we look for egg ![Sample Query 3](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query3.png)
- - Users will use the ingredient to provide the information regarding all the symptoms related to ingredient(Food Allergen) for ex- here we look for Egg(a001)![Sample Query 4](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query4.png)
- - If a person is having a particular symptom for example "Confusion" this query will return all the ingredients(food allergens) which can be associated with the symptom. ![Sample Query 5](https://github.com/Andyjag91/Allergens-in-Goya-Food-Products-/blob/main/images/query5.png)
+ - For Users that want to list all the 8 Major Food Allergens and and their allergen_id
+```sql
+SELECT * FROM allergens;
+```
+ - For Users who have, for example, egg allergy. The query below is to get the allergy_id of the ingredient (Food Allergen)
+```sql
+SELECT allergy_id FROM allergens
+WHERE ingredient='egg';
+```
+ - Users who wants to use the allergen_id to see all the products with that ingredient (Food Allergen). The sample query below uses egg (a001) 
+```sql
+SELECT a.allergy_id,p.ingredient,p.products
+FROM allergens AS a
+INNER JOIN all_products AS p
+ON a.allergy_id=p.allergy_id
+WHERE a.allergy_id='a001';
+```
+ - For Users who wants the ingredient to provide the information regarding all the substitute of ingredient(Food Allergen), here we look for egg 
+```sql
+SELECT p.ingredient,s.substitute
+FROM all_products AS p
+INNER JOIN substitutes AS  s
+ON p.allergy_id=s.allergy_id
+WHERE p.ingredient='egg';
+```
+ - Users will use the ingredient to provide the information regarding all the symptoms related to ingredient(Food Allergen) for ex- here we look for Egg(a001)!
+```sql
+SELECT p.ingredient,sy.symptoms
+FROM all_products AS p
+INNER JOIN symptoms AS  sy
+ON p.allergy_id=sy.allergy_id
+WHERE p.ingredient='egg';
+```
+ - If a person is having a particular symptom for example "Confusion" this query will return all the ingredients(food allergens) which can be associated with the symptom. 
+```sql
+SELECT sy.symptoms, p.ingredient
+FROM symptoms AS sy
+INNER JOIN all_products AS p
+ON sy.allergy_id=p.allergy_id
+WHERE sy.symptoms='Confusion';
+```
 
 ## Hypothetical Questions:
  - What Goya food products should one avoid if allergic to a specific food allergen?
